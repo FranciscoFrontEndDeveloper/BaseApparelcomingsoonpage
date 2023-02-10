@@ -8,6 +8,7 @@ import { SectionOneComponent } from './components/section-one/section-one.compon
 import { FootercomponentComponent } from './components/footercomponent/footercomponent.component';
 import { HeadercomponentComponent } from './components/headercomponent/headercomponent.component';
 import { PicturecomponentComponent } from './components/picturecomponent/picturecomponent.component';
+import { TitlecomponentComponent } from './components/titlecomponent/titlecomponent.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PicturecomponentComponent } from './components/picturecomponent/picture
     SectionOneComponent,
     FootercomponentComponent,
     HeadercomponentComponent,
-    PicturecomponentComponent
+    PicturecomponentComponent,
+    TitlecomponentComponent
   ],
   imports: [
     BrowserModule,
