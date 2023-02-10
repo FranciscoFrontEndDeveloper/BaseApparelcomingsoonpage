@@ -9,6 +9,7 @@ import { FootercomponentComponent } from './components/footercomponent/footercom
 import { HeadercomponentComponent } from './components/headercomponent/headercomponent.component';
 import { PicturecomponentComponent } from './components/picturecomponent/picturecomponent.component';
 import { TitlecomponentComponent } from './components/titlecomponent/titlecomponent.component';
+import { ParagraphcomponentComponent } from './components/paragraphcomponent/paragraphcomponent.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TitlecomponentComponent } from './components/titlecomponent/titlecompon
     FootercomponentComponent,
     HeadercomponentComponent,
     PicturecomponentComponent,
-    TitlecomponentComponent
+    TitlecomponentComponent,
+    ParagraphcomponentComponent
   ],
   imports: [
     BrowserModule,
