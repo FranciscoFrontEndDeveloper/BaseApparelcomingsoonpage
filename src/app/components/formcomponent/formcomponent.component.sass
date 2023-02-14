@@ -1,6 +1,18 @@
+@import ../../../styles
 .formContainer__form
   display: flex
   flex-direction: row
   justify-content: center
-.formContainer__form--inputSudmit
-  background: #000
+  &--inputEmail
+    width: 100%
+    padding: 14px 10px
+    border: 1px solid $DesaturatedRed
+    border-radius: 40rem
+  &--inputEmail::placeholder
+    color: $DesaturatedRed
+  &--inputSudmit
+    background: $DesaturatedRed
+    position: absolute
+    padding: 0.8rem 1.5rem
+    border-radius: 40rem
+    right: 0
