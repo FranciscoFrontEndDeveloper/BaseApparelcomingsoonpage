@@ -4,3 +4,23 @@
   grid-template-rows: repeat(5, auto)
   height: auto
   row-gap: 1rem
+
+@media screen and ( max-width: 1440px  )
+  .containerMain__challenge
+    height: 100%
+    grid-template-columns: repeat(2, auto)
+    grid-template-rows: repeat(4, auto)
+    grid-template-areas: 'header picture' 'title picture' 'paragraph picture' 'form picture'
+  app-headercomponent
+    grid-area: header
+  app-picturecomponent
+    grid-area: picture
+  app-titlecomponent
+    grid-area: title
+  app-paragraphcomponent
+    grid-area: paragraph
+  app-formcomponent
+    grid-area: form
+
+  app-headercomponent, app-titlecomponent, app-paragraphcomponent, app-formcomponent
+    margin: 0 100px
