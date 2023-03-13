@@ -1,10 +1,18 @@
 <div class="formContainer">
-  <form action="" class="formContainer__form">
-    <input class="formContainer__form--inputEmail" type="email" placeholder="Email Address"  />
-    <input class="formContainer__form--inputSudmit"
+  <form action="" class="formContainer__form" [formGroup]="checkForm">
+    <input
+      formControlName="email"
+      class="formContainer__form--inputEmail"
+      type="email"
+      placeholder="Email Address"
+    />
+    <input
+      (click)="submit()"
+      class="formContainer__form--inputSudmit"
       type="image"
       src="../../../assets/images/icon-arrow.svg"
       alt="icon-arrow"
     />
   </form>
+  <span *ngIf="formErrorState">{{ formErrorMessage }}</span>
 </div>
