@@ -16,10 +16,8 @@ export class PicturecomponentComponent {
   sizeMediaQuery() {
     if (window.innerWidth < 1440) {
       this.sizePicture ='../../../assets/images/hero-mobile.jpg'
-      console.log('es movil');
     } else {
       this.sizePicture = '../../../assets/images/hero-desktop.jpg'
-      console.log(this.sizePicture)
     }
   }
 }

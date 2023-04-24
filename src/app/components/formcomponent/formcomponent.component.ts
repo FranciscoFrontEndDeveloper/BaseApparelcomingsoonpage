@@ -20,10 +20,8 @@ export class FormcomponentComponent {
   submit() {
     if (this.checkForm.valid) {
       this.formErrorState = false
-      console.log(this.formErrorState)
     } else {
       this.formErrorState = true
-      console.log(this.formErrorState)
     }
   }
 }
