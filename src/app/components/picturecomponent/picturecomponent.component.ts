@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./picturecomponent.component.sass'],
 })
 export class PicturecomponentComponent {
-  sizePicture: string = ''
+  sizePicture: string = '';
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
@@ -15,9 +15,9 @@ export class PicturecomponentComponent {
 
   sizeMediaQuery() {
     if (window.innerWidth < 1440) {
-      this.sizePicture ='../../../assets/images/hero-mobile.jpg'
+      this.sizePicture = 'assets/images/hero-mobile.jpg';
     } else {
-      this.sizePicture = '../../../assets/images/hero-desktop.jpg'
+      this.sizePicture = 'assets/images/hero-desktop.jpg';
     }
   }
 }
